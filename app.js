@@ -29,15 +29,3 @@ let port  = 2345;
 app.listen(port, () => {
     console.log("Server is running on port " + port);
 });
-
-// app1.use(bodyParser.json());
-// app1._router.use(bodyParser.urlencoded({extended: false}));
-// app1.use('/user', user);
-// let port1 = 6789;
-// app1.listen(port1, () => {
-//     console.log("Client is running on port " + port1);
-// });
-
-// app1.get('/user', function (req, res) {
-//     res.sendFile(__dirname+"/form.html");
-// });  
