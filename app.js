@@ -5,8 +5,6 @@ const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 var jsdom = require("jsdom");
 var JSDOM = jsdom.JSDOM;
-// const request = require('request');
-// import route
 const user = require('./routes/user.route');
 
 // initialize app
