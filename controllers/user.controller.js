@@ -19,10 +19,6 @@ exports.test = function(req, res) {
 // insert a document in the database, it takes input not through some function, so maybe we can try and work around with and onclick.
 exports.user_create = function(req, res, next) {
     // take input from document here
-    // var uname = req.body.uname;
-    // var umail = req?.body?.umail;
-    // const url = 'http://localhost:1234/user/create?uname=Vansh&umail=cp';
-    // const params = url.parse(req.url, true).query;
     const ch = new users({
         name: req.body.uname,
         email: req.body.umail, //pk
@@ -43,10 +39,6 @@ exports.user_create = function(req, res, next) {
 
 exports.non_sakec_create = function(req, res, next) {
     // take input from document here
-    // var uname = req.body.uname;
-    // var umail = req?.body?.umail;
-    // const url = 'http://localhost:1234/user/create?uname=Vansh&umail=cp';
-    // const params = url.parse(req.url, true).query;
     const ns = new nonSakec({
         name: req.body.uname,
         email: req.body.umail, //pk
